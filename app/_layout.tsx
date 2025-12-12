@@ -1,21 +1,16 @@
 import { Stack } from "expo-router";
-import { StatusBar } from "expo-status-bar";
 import { useEffect } from "react";
-import * as NavigationBar from "expo-navigation-bar";
-import { Platform } from "react-native";
+import { Platform, View } from "react-native";
+import { setStatusBarHidden } from "expo-status-bar";
+import * as SystemUI from "expo-system-ui";
 
 export default function RootLayout() {
   useEffect(() => {
     if (Platform.OS === "android") {
-      NavigationBar.setVisibilityAsync("hidden");
-      NavigationBar.setBehaviorAsync("overlay-swipe");
+      setStatusBarHidden(true, "none");
+      SystemUI.setBackgroundColorAsync("transparent");
     }
   }, []);
 
-  return (
-    <>
-      <StatusBar hidden />
-      <Stack screenOptions={{ headerShown: false }} />
-    </>
-  );
+  return <Stack screenOptions={{ headerShown: false }} />;
 }
