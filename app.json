@@ -20,8 +20,7 @@
       },
       "edgeToEdgeEnabled": false,
       "predictiveBackGestureEnabled": false,
-      "package": "com.anonymous.FuxaMobile",
-      "usesCleartextTraffic": true
+      "package": "com.anonymous.FuxaMobile"
     },
     "web": {
       "output": "static",
@@ -38,6 +37,14 @@
           "backgroundColor": "#ffffff",
           "dark": {
             "backgroundColor": "#000000"
+          }
+        }
+      ],
+      [
+        "expo-build-properties",
+        {
+          "android": {
+            "usesCleartextTraffic": true
           }
         }
       ]
