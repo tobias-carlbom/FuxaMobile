@@ -20,7 +20,8 @@
       },
       "edgeToEdgeEnabled": false,
       "predictiveBackGestureEnabled": false,
-      "package": "com.anonymous.FuxaMobile"
+      "package": "com.anonymous.FuxaMobile",
+      "usesCleartextTraffic": true
     },
     "web": {
       "output": "static",
@@ -48,8 +49,9 @@
     "extra": {
       "router": {},
       "eas": {
-        "projectId": "e615d107-f251-47a5-8061-31a7a5faaa8c"
+        "projectId": "322d4a7c-a13a-4b83-b9ba-940e75a131bc"
       }
-    }
+    },
+    "owner": "carlboms-data-ab"
   }
 }
